@@ -1,0 +1,17 @@
+@model ItemPedido
+
+<form method="POST">
+    <p>
+        <label asp-for="item" type="text">Item:</label>
+        <input asp-for="item"/>
+    </p>
+        <p>
+        <label asp-for="valor" type="text">Valor:</label>
+        <input asp-for="valor"/>
+    </p>
+        <p>
+        <label asp-for="quantidade" type="number">Quantidade:</label>
+        <input asp-for="quantidade"/>
+    </p>
+<input type="submit" value="Cadastrar pedido"/>
+</form>
